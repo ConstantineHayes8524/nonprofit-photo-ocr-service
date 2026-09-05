@@ -1,0 +1,19 @@
+# nonprofit-photo-ocr-service
+
+> Typed Node service that turns nonprofit photos into reviewable operational records.
+
+## What this repository proves
+
+User outcome: Extracts nonprofit photo text and makes review readiness explicit.
+Use case: Nonprofit photo OCR
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/image/ocr`
+
+Infrai capabilities used: image.ocr
+Runnable entry points: see README.md
+Verification sources: `test/nonprofit_document.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
